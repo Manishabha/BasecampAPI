@@ -18,7 +18,8 @@ namespace DAL.Models
 		public string Comments { get; set; }
 		public string AssignedTo { get; set; }
 		public int Status { get; set; }
-        public TaskItem ParentTask { get; set; }
+		public int? ParentTaskId { get; set; }
+		public TaskItem ParentTask { get; set; }
         public int SprintId { get; set; }
 		public Sprint Sprint { get; set; }
 	}

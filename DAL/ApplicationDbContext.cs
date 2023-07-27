@@ -21,6 +21,12 @@ namespace DAL
 		{
 			// Declare the entity type as keyless
 			modelBuilder.Entity<List<string>>().HasNoKey();
+
+			modelBuilder.Entity<TaskItem>()
+			.HasOne(t => t.ParentTask)
+			.WithMany()
+			.HasForeignKey(t => t.ParentTaskId)
+			.OnDelete(DeleteBehavior.NoAction);
 		}
 	}
 }
