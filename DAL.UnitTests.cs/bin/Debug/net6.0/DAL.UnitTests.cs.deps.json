@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DAL.UnitTests.cs/1.0.0": {
+        "runtime": {
+          "DAL.UnitTests.cs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DAL.UnitTests.cs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\bin\Debug\net6.0\DAL.UnitTests.cs.deps.json
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\bin\Debug\net6.0\DAL.UnitTests.cs.dll
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\bin\Debug\net6.0\DAL.UnitTests.cs.pdb
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\obj\Debug\net6.0\DAL.UnitTests.cs.csproj.AssemblyReference.cache
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\obj\Debug\net6.0\DAL.UnitTests.cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\obj\Debug\net6.0\DAL.UnitTests.cs.AssemblyInfoInputs.cache
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\obj\Debug\net6.0\DAL.UnitTests.cs.AssemblyInfo.cs
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\obj\Debug\net6.0\DAL.UnitTests.cs.csproj.CoreCompileInputs.cache
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\obj\Debug\net6.0\DAL.UnitTests.cs.dll
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\obj\Debug\net6.0\refint\DAL.UnitTests.cs.dll
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\obj\Debug\net6.0\DAL.UnitTests.cs.pdb
+C:\Users\manbhatia\source\repos\BasecampAPI\DAL.UnitTests.cs\obj\Debug\net6.0\ref\DAL.UnitTests.cs.dll
