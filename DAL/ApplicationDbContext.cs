@@ -26,7 +26,7 @@ namespace DAL
 			.HasOne(t => t.ParentTask)
 			.WithMany()
 			.HasForeignKey(t => t.ParentTaskId)
-			.OnDelete(DeleteBehavior.NoAction);
+			.OnDelete(DeleteBehavior.Restrict);
 		}
 	}
 }

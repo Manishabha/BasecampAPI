@@ -132,7 +132,7 @@ namespace DAL.Migrations
                     b.HasOne("DAL.Models.TaskItem", "ParentTask")
                         .WithMany()
                         .HasForeignKey("ParentTaskId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("DAL.Models.Sprint", "Sprint")

@@ -5,11 +5,24 @@
 namespace DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class updateentities : Migration
+    public partial class @new : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Boards",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Boards", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "List<string>",
                 columns: table => new
@@ -69,7 +82,7 @@ namespace DAL.Migrations
                         column: x => x.ParentTaskId,
                         principalTable: "TaskItems",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
@@ -99,6 +112,9 @@ namespace DAL.Migrations
 
             migrationBuilder.DropTable(
                 name: "Sprints");
+
+            migrationBuilder.DropTable(
+                name: "Boards");
         }
     }
 }

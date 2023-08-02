@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230727043729_update-entities")]
-    partial class updateentities
+    [Migration("20230731110206_new")]
+    partial class @new
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -91,7 +91,8 @@ namespace DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ParentTaskId")
+                    b.Property<int?>("ParentTaskId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<int>("Priotiy")
@@ -134,7 +135,7 @@ namespace DAL.Migrations
                     b.HasOne("DAL.Models.TaskItem", "ParentTask")
                         .WithMany()
                         .HasForeignKey("ParentTaskId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("DAL.Models.Sprint", "Sprint")
