@@ -14,12 +14,12 @@ namespace DAL.Services
 		}
 		public Sprint CreateSprint(Sprint sprint)
 		{
-			return _sprintRepository.GetById(sprint.Id);
+			return _sprintRepository.Add(sprint);
 		}
 
 		public void DeleteSprint(Sprint sprint)
 		{
-			_sprintRepository.Delete(sprint);
+			_sprintRepository.Delete(sprint.Id);
 		}
 
 		public Sprint GetSprint(int id)

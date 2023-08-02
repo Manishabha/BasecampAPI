@@ -103,20 +103,5 @@ namespace BasecampAPI.Controllers
 				return BadRequest(ex.Message);
 			}
 		}
-
-		//[HttpGet]
-		//[Route("alltasks")]
-		//public IActionResult GetAllTask(int id)
-		//{
-		//	try
-		//	{
-		//		this.boardService.GetAllTasks(id);
-		//		return Ok();
-		//	}
-		//	catch (Exception ex)
-		//	{
-		//		return BadRequest(ex.Message);
-		//	}
-		//}
 	}
 }

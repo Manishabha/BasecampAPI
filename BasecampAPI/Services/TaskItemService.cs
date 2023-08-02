@@ -6,35 +6,35 @@ namespace DAL.Services
 {
 	public class TaskItemService : ITaskItemService
 	{
-		private readonly IRepository<TaskItem> _sprintRepository;
+		private readonly IRepository<TaskItem> _taskRepository;
 
-		public TaskItemService(IRepository<TaskItem> sprintRepository)
+		public TaskItemService(IRepository<TaskItem> taskRepository)
 		{
-			_sprintRepository = sprintRepository;
+			_taskRepository = taskRepository;
 		}
 		public TaskItem CreateTask(TaskItem taskItem)
 		{
-			return _sprintRepository.GetById(taskItem.Id);
+			return _taskRepository.Add(taskItem);
 		}
 
 		public void DeleteTask(TaskItem taskItem)
 		{
-			_sprintRepository.Delete(taskItem);
+			_taskRepository.Delete(taskItem.Id);
 		}
 
 		public TaskItem GetTask(int id)
 		{
-			return _sprintRepository.GetById(id);
+			return _taskRepository.GetById(id);
 		}
 
 		public List<TaskItem> GetAllTasks()
 		{
-			return _sprintRepository.GetAll().ToList();
+			return _taskRepository.GetAll().ToList();
 		}
 
 		public void UpdateTask(TaskItem taskItem)
 		{
-			_sprintRepository.Update(taskItem);
+			_taskRepository.Update(taskItem);
 		}
 	}
 }

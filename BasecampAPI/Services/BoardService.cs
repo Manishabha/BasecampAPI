@@ -1,6 +1,7 @@
 ﻿using DAL.Models;
 using DAL.Repository;
 using DAL.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,12 +20,12 @@ namespace DAL.Services
 		}
 		public Board CreateBoard(Board board)
 		{
-			 return _boardRepository.GetById(board.Id);
+			 return _boardRepository.Add(board);
 		}
 
 		public void DeleteBoard(Board board)
 		{
-			 _boardRepository.Delete(board);
+			_boardRepository.Delete(board.Id);
 		}
 
 		public Board GetBoard(int id)
@@ -47,19 +48,6 @@ namespace DAL.Services
 		//	var boards = await _boardRepository.GetAll();
 		//	boards.Any(x => x)
 
-		//}
-
-		//public List<TaskItem> GetAllTasks(int boardId)
-		//{
-		//	using (var context = new ApplicationDbContext())
-		//	{
-		//		var boardFromDb = context.Boards.Where(x => x.Id == boardId).FirstOrDefault();
-		//		if (boardFromDb != null)
-		//		{
-		//			//return boardFromDb.Tasks;
-		//		}
-		//		return default;
-		//	}
 		//}
 	}
 }

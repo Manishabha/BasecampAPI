@@ -102,7 +102,6 @@ namespace BasecampAPI.Controllers
 			}
 		}
 
-		// DELETE api/<TaskItemController>/5
 		[HttpDelete()]
 		public IActionResult Delete([FromBody] TaskItem task)
 		{
@@ -116,61 +115,5 @@ namespace BasecampAPI.Controllers
 				return BadRequest(ex.Message);
 			}
 		}
-
-		//[HttpPatch("{id}/{sprintId}")]
-		//public IActionResult UpdateSprint(int id, int sprintId)
-		//{
-		//	try
-		//	{
-		//		this.taskItemService.UpdateSprintForTask(id, sprintId);
-		//		return Ok();
-		//	}
-		//	catch (Exception ex)
-		//	{
-		//		return BadRequest(ex.Message);
-		//	}
-		//}
-
-		//[HttpPatch("{id}/comment")]
-		//public IActionResult UpdateComment(int id, [FromBody] string comment)
-		//{
-		//	try
-		//	{
-		//		this.taskItemService.AddComment(id, comment);
-		//		return Ok();
-		//	}
-		//	catch (Exception ex)
-		//	{
-		//		return BadRequest(ex.Message);
-		//	}
-		//}
-
-		//[HttpPatch("{id}/{assignedTo}")]
-		//public IActionResult UpdateAssignedTo(int id, [FromBody] string assignedTo)
-		//{
-		//	try
-		//	{
-		//		this.taskItemService.UpdateAssignedTo(id, assignedTo);
-		//		return Ok();
-		//	}
-		//	catch (Exception ex)
-		//	{
-		//		return BadRequest(ex.Message);
-		//	}
-		//}
-
-		//[HttpPatch("{id}/{status}")]
-		//public IActionResult UpdateStatus(int id, [FromBody] TaskStatus status)
-		//{
-		//	try
-		//	{
-		//		this.taskItemService.UpdateStatus(id, status);
-		//		return Ok();
-		//	}
-		//	catch (Exception ex)
-		//	{
-		//		return BadRequest(ex.Message);
-		//	}
-		//}
 	}
 }

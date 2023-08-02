@@ -56,11 +56,6 @@ namespace BasecampAPI.Controllers
 				{
 					return BadRequest();
 				}
-				//var boardWithSameName = this.boardService.BoardExistWithSameName(board.Name);
-				//if (boardWithSameName)
-				//{
-				//	return BadRequest("Board with same name already exist. Choose a different name!!");
-				//}
 				_sprintService.CreateSprint(sprint);
 				return Ok();
 			} 
